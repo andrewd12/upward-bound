@@ -6,26 +6,75 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        h1 {
-            color: rgb(94, 53, 53);
-            font-style: oblique;
+        .container {
+            max-width: 1200px;
+            display: block;
+            margin: auto;
+        }
+        .feature {
+            position: relative;
+        }
+        .feature .text-wrap {
+            position: absolute;
+            right: 3%;
+            top: 50%;
+            width: 40%;
+            transform: transformY(-50%);
+            color: #fff;
+        }
+        .columns .col {
+            display: inline-block;
+            width: 33%;
+            position: relative;
+        }
+        .columns .col p {
+            position: absolute;
+            padding: 0 15px;
+            bottom: 5%;
+            left: 5%;
+            color: white;
+            font-weight: bold;
         }
         img {
-            display: inline-block;
-            width: 30%;
+            display: block;
+            margin: auto;
+            max-width: 100%;
         }
-        p {
-            display: inline-block;
-            padding: 10px 20px 20px 20px;
+        @media screen and (max-width: 767px) {
+            .columns .col {
+                display: block;
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 
 <body>
-    <h1>hey, you.</h1>
-    <img src="walter.jpeg">
-    <p>you know im ballin, usual like kobe (24!)
-    </p>
+    <main>
+        <div class="container">
+          <h1>Hello</h1>
+          <section class="feature">
+            <a href="https://en.wikipedia.org/wiki/Stock_market"><img src="walter.jpeg"></a>
+            <div class="text-wrap">
+                <p>you know im ballin, usual like kobe (24!)</p>
+            </div>
+          </section>
+          <section class="columns">
+            <div class="col">
+              <img src="waltermoney.jpeg">
+              <p>walter money</p>
+            </div>
+            <div class="col">
+              <img src="huell.jpeg">
+              <p>huell.</p>
+            </div>
+            <div class="col">
+              <img src="alotofmoney.jpeg">
+              <p>chasing the bag dont worry about what im doing</p>
+            </div>
+          </section>
+        </div>
+      </main>
 </body>
 </html>
