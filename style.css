@@ -36,9 +36,42 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate (-50%, -50%);
+    color: gold;
+    font-style: italic;
 }
 
 .hero h1,
 .hero h2 {
     margin: auto;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+.video-wrap .container {
+    margin: auto;
+    max-width: 800px;
 }
