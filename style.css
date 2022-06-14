@@ -36,7 +36,7 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate (-50%, -50%);
-    color: gold;
+    color: #ffd700;
     font-style: italic;
 }
 
@@ -74,4 +74,28 @@ h2 {
 .video-wrap .container {
     margin: auto;
     max-width: 800px;
+}
+
+button {
+    position: relative;
+    padding: 10px 40px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+    border-radius: 3px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #ebba51;
+    border: none;
+    border-bottom: 5px solid #b58e3b;
+    text-shadow: 0px -2px #b58e3b;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+   
+   button:hover, button:active {
+    -webkit-transform: translate(0px,5px);
+    -ms-transform: translate(0px,5px);
+    transform: translate(0px,5px);
+    border-bottom: 1px solid #b58e3b;
 }
