@@ -8,19 +8,27 @@
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
+  <header>
+    <div class="container">
+      <a href="/06.06.22.html" class="logo">Andrew</a>
+      <ul class="nav">
+        <li><a href="#about me">About me</a></li>
+        <li><a href="#video">Video</a></li>
+      </ul>
+    </div>
+  </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="text">
       <h1>Andrew</h1>
       <h2>you know im ballin, usual like kobe</h2>
     </div>
     </section>
-    <section class="info">
+    <section class="info" id="about me">
       <div class="columns">
         <div class="col">
           <h2>About me</h2>
@@ -38,9 +46,9 @@
           <h2>What I want to do</h2>
           <p>Aerospace engineering 🔥</p>
         </div>
-        <div class="col">
-          <h2>Cool thing</h2>
-          <button class="button" onclick="window.location.href='https://en.wikipedia.org/wiki/Sliced_bread';">cool thing</button>
+        <div class="col" id="video">
+          <h2>Tasty Food</h2>
+          <button class="button" onclick="window.location.href='https://en.wikipedia.org/wiki/Sliced_bread';">food</button>
         </div>
       </div>
     </section>

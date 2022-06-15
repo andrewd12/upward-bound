@@ -1,15 +1,49 @@
-/* {
-    font-family: 'Castoro', serif;
-} */
-
 h1 {
     font-size: 50px;
     font-weight: bold;
-    font-family: 'Castoro', serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h2 {
     font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*.container {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+}
+*/
+
+header {
+    background-color: #ebba51;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+
+
+.nav ul {
+    background-color: #b58e3b;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav a {
+    display: block;
+    padding: 8px;
+    background-color: #b58e3b;
 }
 
 .hero {
@@ -36,8 +70,9 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate (-50%, -50%);
-    color: #ffd700;
+    color: #ebba51;
     font-style: italic;
+    font-family: 'Oswald', sans-serif;
 }
 
 .hero h1,
@@ -48,6 +83,7 @@ h2 {
 .columns {
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Oswald', sans-serif;
 }
 
 .col {
@@ -91,6 +127,7 @@ button {
     text-shadow: 0px -2px #b58e3b;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
+    font-family: 'Oswald', sans-serif;
 }
    
    button:hover, button:active {
